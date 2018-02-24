@@ -1,0 +1,84 @@
+{
+  "name": "react-expressjs",
+  "version": "4.0.0",
+  "description": "Boilerplate for ReactJS project with ExpressJS server",
+  "main": "",
+  "scripts": {
+    "dev": "webpack-dev-server --config webpack/client.dev.js ",
+    "build": "npm run build:client",
+    "build:client": "cross-env NODE_ENV=production webpack --config webpack/client.dev.js --display-error-details --progress",
+    "lint": "eslint --ext .jsx,.js ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tahnik/react-express-webpack-babel"
+  },
+  "keywords": [
+    "react",
+    "express",
+    "webpack",
+    "babel",
+    "expressjs",
+    "react router v4",
+    "redux"
+  ],
+  "author": "Tahnik Mustasin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tahnik/react-express-webpack-babel/issues"
+  },
+  "homepage": "https://github.com/tahnik/react-express-webpack-babel#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "cross-env": "^5.0.5",
+    "font-awesome": "^4.7.0",
+    "lodash": "^4.17.4",
+    "normalize.css": "^7.0.0",
+    "prop-types": "^15.5.10",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-hot-loader": "^3.1.3",
+    "react-redux": "^5.0.3",
+    "react-router": "^4.1.2",
+    "react-router-dom": "^4.1.2",
+    "redux": "^3.5.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.4.1",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-class-property": "^1.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.3.0",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.5.3",
+    "redux-devtools-extension": "^2.13.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "webpack": "^3.5.3",
+    "webpack-dev-server": "^2.11.1",
+    "webpack-node-externals": "^1.2.0"
+  },
+  "bundledDependencies": [
+    "cross-env",
+    "prop-types",
+    "react",
+    "react-dom",
+    "react-redux",
+    "react-router",
+    "react-router-dom",
+    "redux"
+  ]
+}

@@ -1,0 +1,18 @@
+$fa-woff2: $fonts-path + "fontawesome-webfont.woff2";
+$fa-woff: $fonts-path + "fontawesome-webfont.woff";
+$fa-ttf: $fonts-path + "fontawesome-webfont.ttf";
+$fa-eot: $fonts-path + "fontawesome-webfont.eot";
+$fa-svg: $fonts-path + "fontawesome-webfont.svg";
+$fa-otf: $fonts-path + "FontAwesome.otf";
+
+@font-face {
+	font-family: "Font awesome";
+    font-style: normal;
+    font-weight: 400;
+    src: url($fa-woff2) format('woff2'),
+		 url($fa-woff) format('woff'),
+		 url($fa-ttf) format('ttf'),
+		 url($fa-otf) format('otf'),
+		 url($fa-eot) format('eot'),
+		 url($fa-svg) format('svg');
+}
