@@ -5,7 +5,9 @@ export default class SearchBar extends Component {
   render() {
     return (
       <div className="search-bar">
-        SEARCH BAR
+        <div className="search-bar__inner">
+          SearchBar
+        </div>
       </div>
     )
   }
