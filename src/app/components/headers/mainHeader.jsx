@@ -9,6 +9,7 @@ import IconButton from 'material-ui/IconButton'
 import LogoutBtn from '../buttons/logoutBtn'
 import ProfileBtn from '../buttons/profileBtn'
 import MenuIcon from 'material-ui-icons/Menu'
+import { login, logout, isLoggedIn } from '../../utils/authService'
 
 const styles = {
   root: {
@@ -26,7 +27,7 @@ const styles = {
 
 class MainHeader extends Component {
   handlerLogout = () => {
-    window.sessionStorage.removeItem(Api.auth_token_key)
+    logout()
   }
 
   render() {
