@@ -13,6 +13,8 @@ import IconButton from 'material-ui/IconButton';
 import MenuIcon from 'material-ui-icons/Menu';
 import ChevronLeftIcon from 'material-ui-icons/ChevronLeft';
 import ChevronRightIcon from 'material-ui-icons/ChevronRight';
+import ListItem from 'material-ui/List/ListItem';
+import ListItemText from 'material-ui/List/ListItemText';
 
 const drawerWidth = 240;
 
@@ -116,12 +118,27 @@ class ViewBar extends Component {
     }
   }
 
+  formatObject = (obj) => {
+    const {title} = obj
+    return (
+      <List>
+        <ListItem button>
+          <ListItemText primary={title} />
+        </ListItem>
+      </ List>
+    )
+  }
+
 
   render() {
-    const { classes, theme, onHideClick } = this.props;
+    const { classes, theme, onHideClick, currentObject } = this.props;
     const { anchor } = this.state;
     const open = this.props.isOpen;
-
+    let formatedObj = null;
+    if (currentObject != null) {
+      formatedObj = this.formatObject(currentObject)
+    }
+    console.log(formatedObj)
 
     const drawer = (
       <Drawer
@@ -139,7 +156,7 @@ class ViewBar extends Component {
             </IconButton>
           </div>
           <Divider />
-          <List />
+          {formatedObj}
           <Divider />
           <List />
         </div>
@@ -156,17 +173,9 @@ class ViewBar extends Component {
     }
 
     return (
-      <div className={classNames(classes.root)}>
+      <div style={{width: 'auto'}} className={classNames(classes.root)}>
         <div className={classes.appFrame}>
           {before}
-          <main
-            className={classNames(classes.content, classes[`content-${anchor}`], {
-              [classes.contentShift]: open,
-              [classes[`contentShift-${anchor}`]]: open,
-            })}
-          >
-            <Typography>{'You think water moves fast? You should see ice.'}</Typography>
-          </main>
           {after}
         </div>
       </div>

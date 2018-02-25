@@ -35,7 +35,7 @@ class MainHeader extends Component {
     return (
       <div className="main-header">
         <div className="main-header__inner">
-          <AppBar position="static">
+          <AppBar style={{backgroundColor: '#fbdb49'}} position="static">
             <Toolbar>
               <IconButton 
                 className={classes.menuButton} 

@@ -1,0 +1,5 @@
+export const food = 'food'
+export const water = 'water'
+export const wifi = 'wifi'
+export const building = 'building'
+export const wc = 'wc'

@@ -21,18 +21,16 @@ export default class PreviewPage extends Component {
         <div className="preview-page__content" >
           <Parallax
             blur={1}
-            bgImage={'https://res.cloudinary.com/dfunxotqn/image/upload/c_scale,w_2161/v1519510042/index.jpg'}
+            bgImage={'http://res.cloudinary.com/dfunxotqn/image/upload/v1519556780/map1.png'}
             bgImageAlt="the cat"
             strength={400}
           >
-            Put some text content here
-            or even an empty div with fixed dimensions
-            to have a height for the parallax.
             <div style={{ height: '800px' }} />
           </Parallax>
           <Parallax
             blur={{ min: -5, max: 5 }}
-            bgImage={'https://static.pexels.com/photos/531880/pexels-photo-531880.jpeg'}
+            
+            bgImage={'http://healthybeesllc.com/wp-content/uploads/2017/09/WHOWEARE-1.jpg'}
             bgImageAlt="the dog"
             strength={200}
           >
