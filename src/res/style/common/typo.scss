@@ -5,6 +5,8 @@ $fa-eot: $fonts-path + "fontawesome-webfont.eot";
 $fa-svg: $fonts-path + "fontawesome-webfont.svg";
 $fa-otf: $fonts-path + "FontAwesome.otf";
 
+
+
 @font-face {
 	font-family: "Font awesome";
     font-style: normal;
@@ -15,4 +17,11 @@ $fa-otf: $fonts-path + "FontAwesome.otf";
 		 url($fa-otf) format('otf'),
 		 url($fa-eot) format('eot'),
 		 url($fa-svg) format('svg');
+}
+
+@font-face {
+	font-family: "Arial Rounded MT Bold";
+	font-style: normal;
+	font-weight: bold;
+	src: url($brand-font-1) format('TTF');
 }

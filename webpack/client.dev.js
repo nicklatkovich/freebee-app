@@ -9,7 +9,7 @@ module.exports = {
     'webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
     './src/app/index.jsx',
-    './src/res/style/main.scss',
+    './src/res/style/main.sass',
   ],
   output: {
     path: path.join(__dirname,'/../public'),
@@ -45,7 +45,7 @@ module.exports = {
         }]
       },
       {
-        test: /\.(otf|eot|ttf|woff|woff2)$/,
+        test: /\.(TTF|otf|eot|ttf|woff|woff2)$/,
         use: [{
           loader: 'file-loader',
           options: {}

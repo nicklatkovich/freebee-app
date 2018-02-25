@@ -4,7 +4,7 @@ export default class HideBtn extends Component {
   render() {
     return (
       <button className="hide-btn">
-        HIDE BUTTON <
+        HIDE BUTTON 
       </button>
     )
   }
