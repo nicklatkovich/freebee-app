@@ -54,7 +54,12 @@ Freebee – приложение, которое позволяет пользо
 
 5) Реклама в тематических пабликах, у инфлюэнсеров (при привлечении инвестиций);
 
+## Команда
 
-
+* **Егор Пуйша** - [GitStearis](https://github.com/GitStearis) - автор идеи, Full-stack Development;
+* **Артем Дадыченко** - [ArtemDadychenko](https://github.com/ArtemDadychenko) - Front-end Developer;
+* **Даниил Чернышев** - [des1nteresado](https://github.com/des1nteresado) - Back-end Developer;
+* **Анастасия Бируля** - дизайнер;
+* **Егор Сулицкий** - маркетолог.
 
 
