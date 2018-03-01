@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { YMaps, Map, GeoObject, Placemark } from 'react-yandex-maps'
 import MainHeader from '../headers/mainHeader'
 import AddingBar from '../sidebars/addingBar'
 import SearchBar from '../sidebars/searchBar'
@@ -90,44 +89,6 @@ export default class MainPage extends Component {
     const {height, width, near, currentObject} = this.state
     const {lat, lng} = this.state.currentCoords
     const mapState = {center: [lat, lng], zoom: 16}
-    console.log('near')
-    console.log(near)
-    console.log('curr')
-    console.log(currentObject)
-
-    const geoObjects = near.map((val, index) => {
-      const {location, type, description} = val
-      console.log('#')
-
-      return (
-        <GeoObject 
-          key={index}
-          onClick={() => { this.handleGeoObjectClick(val) }}
-          geometry={{
-            type: 'Point',
-            coordinates: location,
-          }}
-          properties={{
-            // The placemark content.
-            iconContent: type,
-            hintContent: description,
-          }}
-          // Options.
-          options={{
-            // Options. You must specify this type of layout.
-            iconLayout: 'default#image',
-            // Custom image for the placemark icon.
-            iconImageHref: icons[type.toLowerCase()],
-            // The size of the placemark.
-            iconImageSize: [30, 42],
-            // The offset of the upper left corner of the icon relative
-            // to its "tail" (the anchor point).
-            iconImageOffset: [-3, -42],
-          }}
-        />
-      )
-    })
-    console.log(geoObjects)
 
     return (
       <div className="main-page">
@@ -137,14 +98,7 @@ export default class MainPage extends Component {
         <div className="main-page__inner">
           <ViewBar currentObject={currentObject}  isOpen={isOpen} onHideClick={this.handleDrawerClose}/>
           <div className="main-page__map">
-            <YMaps>
-              <Map state={mapState} 
-              onClick={this.handleClickOnMap} 
-              width={width} 
-              height={height}>
-                {geoObjects}
-              </Map>
-            </YMaps>
+            
           </div>
         </div>
       </div>
