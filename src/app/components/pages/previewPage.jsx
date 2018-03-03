@@ -16,34 +16,28 @@ export default class PreviewPage extends Component {
 
   render() {
     return (
-      <div className="preview-page">
+      <div className = "preview-page">
         <IndexHeader />
-        <div className="preview-page__content" >
-          <Parallax
-            blur={1}
-            bgImage={'http://res.cloudinary.com/dfunxotqn/image/upload/v1519556780/map1.png'}
-            bgImageAlt="the cat"
-            strength={400}
+        <div className = "preview-page__content" >
+          <Parallax blur = { 5 }
+                    bgImage = { 'https://pp.userapi.com/c543103/v543103443/193ca/nmsVfIkGtz8.jpg' }
+                    bgImageAlt = "Shopping center"
+                    strength = { 500 }
           >
-            <div style={{ height: '800px' }} />
+            <div className="preview-page__parallax">
+              <div className="preview-page__container-logo">
+                <div className="preview-page__title">
+                    <h1>Freebee</h1>
+                </div>  
+                <img className="preview-page__logo" src = "https://lh5.googleusercontent.com/AHeqaB6TizRrhgqOhwo8pBaX7yOP0gNTev7lfnBTM5bIq_D6OHWcv1rqXgFMMdkr029j0T5sehJzZD8Fkd5t=w1366-h662-rw" alt = "Freebee logo" />   
+              </div>
+            </div>
           </Parallax>
-          <Parallax
-            blur={{ min: -5, max: 5 }}
-            
-            bgImage={'http://healthybeesllc.com/wp-content/uploads/2017/09/WHOWEARE-1.jpg'}
-            bgImageAlt="the dog"
-            strength={200}
-          >
-              Blur transition from min to max
-            <div style={{ height: '800px' }} />
-          </Parallax>
-          <Parallax strength={800}>
-            <Background className="preview-page__parallax">
-              <img src="https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg" alt="fill murray" />
-            </Background>
+          <Parallax strength = { 200 }
+          >   
+            <div style = {{ height: '800px' }} />
           </Parallax>
         </div>
-        <NextBtn />
       </div>
     )
   }
