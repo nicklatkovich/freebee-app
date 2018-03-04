@@ -1,11 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class ProfileBtn extends Component {
-  render() {
-    return (
-      <button className="profile-btn">
+export default () => {
+  return (
+    <button className="profile-btn">
         ProfileBtn
-      </button>
-    )
-  }
+    </button>
+  )
 }

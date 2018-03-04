@@ -1,11 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class HideBtn extends Component {
-  render() {
-    return (
-      <button className="hide-btn">
-        HIDE BUTTON 
-      </button>
-    )
-  }
+export default () => {
+  return (
+    <button className="hide-btn">
+        HIDE BUTTON
+    </button>
+  )
 }
