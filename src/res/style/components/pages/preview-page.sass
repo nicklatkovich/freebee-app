@@ -5,7 +5,7 @@
     &__parallax
         height: 100vh;
 
-    &__logo_container
+    &__logo-container
         height: 70%;
         width: 100%;
 
@@ -29,39 +29,39 @@
         flex: 0 1 auto;
         align-self: auto;
 
-    &__article_container
-        min-height: 100vh;
-        width: 100%;
-
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-content: stretch;
-        align-items: center;
-
     &__article
         width: 50%;
         margin-top: 2em;
         margin-bot: 2em;
 
-    &__article_title
-        color: $black;
-        text-align: center;
-        font-weight: 700;
-        font-style: normal;
+        &-container
+            min-height: 100vh;
+            width: 100%;
 
-    &__article_description
-        color: $brand-color-3;
-        text-align: center;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-content: stretch;
+            align-items: center;
 
-    &__article_content > p
-        color: $black;
-        font-weight: 400;
-        line-height: 1.5em;
-        text-indent: 1.5em;
-        text-align: justify;
-        margin-top: 1em;
+        &-title
+            color: $black;
+            text-align: center;
+            font-weight: 700;
+            font-style: normal;
+
+        &-description
+            color: $brand-color-3;
+            text-align: center;
+
+        &-content > p
+            color: $black;
+            font-weight: 400;
+            line-height: 1.5em;
+            text-indent: 1.5em;
+            text-align: justify;
+            margin-top: 1em;
 
 .react-parallax-bgimage
   height: 100% !important
