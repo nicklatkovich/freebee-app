@@ -1,5 +1,6 @@
 {
   "extends": "airbnb",
+  "parser": "babel-eslint",
   "globals": {
     "$": true,
     "sessionStorage": true,
@@ -7,6 +8,7 @@
     "document": true
   },
   "rules": {
+    "strict": 0,
     "react/jsx-filename-extension": [
       1,
       {
@@ -16,10 +18,13 @@
         ]
       }
     ],
+    "babel/new-cap": 1,
+    "babel/semi": 0,
     "semi": "off",
     "eol-last": "off",
     "react/forbid-prop-types": 0,
     "linebreak-style": "off",
+    "class-method-use-this": 0,
     "arrow-body-style": [
       "warn",
       "as-needed"
@@ -35,6 +40,13 @@
     "sourceType": "module"
   },
   "plugins": [
+    "babel",
     "class-property"
-  ]
+  ],
+  "settings": {
+    "import/parser": "babel-eslint",
+    "import/resolve": {
+      "moduleDirectory": ["node_modules", "src"]
+    }
+  }
 }
