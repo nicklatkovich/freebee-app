@@ -1,16 +1,15 @@
-import React, { Component } from 'react'
-import Api from '../../constants/api'
+import React from 'react'
+import { Link } from 'react-router-dom'
+import * as Api from '../../constants/api'
 
-export default class LogoutBtn extends Component {
-  handlerLogout = () => {
+export default () => {
+  const handlerLogout = () => {
     window.sessionStorage.removeItem(Api.auth_token_key)
   }
 
-  render() {
-    return (
-      <Link to="/" onClick={this.handlerLogout} className="logout-btn">
+  return (
+    <Link to="/" onClick={handlerLogout} className="logout-btn">
         LogoutBtn
-      </Link>
-    )
-  }
+    </Link>
+  )
 }

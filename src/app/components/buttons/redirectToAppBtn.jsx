@@ -1,17 +1,20 @@
-import React, { Component } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
-export default class RedirectToAppBtn extends Component {
-  render() {
-    const {isEnabled, onClick} = this.props
-    console.log('is ' + isEnabled)
-    return (
-      <Link to={isEnabled ? '/map' : '/'} 
-        className="redirect-to-app-btn"
-        onClick={onClick}
-      >
-        Start
-      </Link>
-    )
-  }
+const redirectToAppBtn = ({ isEnabled, onClick }) => (
+  <Link
+    to={isEnabled ? '/map' : '/'}
+    className="redirect-to-app-btn"
+    onClick={onClick}
+  >
+    Start
+  </Link>
+)
+
+redirectToAppBtn.propTypes = {
+  isEnabled: PropTypes.bool.isRequired,
+  onClick: PropTypes.func.isRequired,
 }
+
+export default redirectToAppBtn
