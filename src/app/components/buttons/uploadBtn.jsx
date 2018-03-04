@@ -1,11 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class UploadBtn extends Component {
-  render() {
-    return (
-      <button className="upload-photo">
+export default () => {
+  return (
+    <button className="upload-photo">
         Upload photo
-      </button>
-    )
-  }
+    </button>
+  )
 }

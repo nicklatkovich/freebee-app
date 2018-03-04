@@ -21,10 +21,11 @@ const drawerWidth = 240;
 const styles = theme => ({
   root: {
     width: '100%',
-    height: 430,
+    height: '100%',
     // marginTop: theme.spacing.unit * 3,
     zIndex: 1,
     overflow: 'hidden',
+    // overflowY: 'hidden',
   },
   appFrame: {
     position: 'relative',
@@ -61,7 +62,7 @@ const styles = theme => ({
   },
   drawerPaper: {
     position: 'relative',
-    height: '100%',
+    // height: '100%',
     width: drawerWidth,
   },
   drawerHeader: {

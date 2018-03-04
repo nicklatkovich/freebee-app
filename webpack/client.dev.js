@@ -28,7 +28,9 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
-          options: {
+          // exclude: /node_modules/,
+          query: {
+            plugins: ['transform-decorators-legacy'],
             presets: ['react', 'env', 'stage-0'],
           },
         },
