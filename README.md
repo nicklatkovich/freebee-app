@@ -7,7 +7,7 @@
   </a>
 </p>
 <p align="center"> 
-  <img style="height: 300px;" src="./src/res/images/logos/freebee-logo.png">
+  <img src="./src/res/images/logos/freebee-logo.png">
 </p>
 
 # Freebee
