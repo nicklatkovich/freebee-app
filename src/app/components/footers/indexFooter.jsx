@@ -1,6 +1,8 @@
 import React from 'react'
 import FontAwesome from 'react-fontawesome';
 
+import Logo from '../../../res/images/freebee-logo.png';
+
 export default () => {
   return (
     <div className="index-footer">
@@ -25,6 +27,9 @@ export default () => {
             />
           </a> 
         </div>
+      </div>
+      <div className="index-footer__section">
+          <img className="index-footer__section-logo" src={ Logo } alt="Freebee logo" />   
       </div>
       <div className="index-footer__section">
         <div className="index-footer__section-text">
