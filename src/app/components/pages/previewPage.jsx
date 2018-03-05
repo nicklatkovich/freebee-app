@@ -4,7 +4,7 @@ import IndexHeader from '../headers/indexHeader'
 import IndexFooter from '../footers/indexFooter'
 import NextBtn from '../buttons/nextBtn'
 
-import Logo from '../../../res/images/freebee-logo.png';
+import Logo from '../../../res/images/logos/freebee-logo.png';
 
 export default class PreviewPage extends Component {
   constructor() {

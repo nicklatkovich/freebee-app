@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import FontAwesome from 'react-fontawesome';
 
-import Logo from '../../../res/images/freebee-logo.png';
+import Logo from '../../../res/images/logos/freebee-logo.png';
 
 export default () => {
   return (
