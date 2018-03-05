@@ -14,7 +14,7 @@
 
     &__section
         height: 100%;
-        width: 50%;
+        width: 33.33333%;
 
         order: 0;
         flex: 0 1 auto;
@@ -35,20 +35,13 @@
             align-content: stretch;
             align-items: center;
 
-            &-link
-                outline: none;
-                
-                order: 0;
-                flex: 0 1 auto;
-                align-self: auto;
-
-                margin: 1em;
-
-                &:visited
-                    color: $brand-color-2;
-
-                &:hover
-                    color: $brand-color-1;
+        &-list
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: stretch;
+            align-items: center;
 
         &-text
             font-weight: 400;
@@ -62,4 +55,16 @@
             flex: 0 1 auto;
             align-self: auto;
 
+    &__link
+        outline: none;
+        text-decoration: none;
+        
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+        margin-left: 1em;
 
+        &:visited
+            color: $brand-color-2;
+        &:hover
+            color: $brand-color-1;
