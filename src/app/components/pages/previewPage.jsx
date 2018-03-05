@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Parallax, Background } from 'react-parallax'
 import IndexHeader from '../headers/indexHeader'
+import IndexFooter from '../footers/indexFooter'
 import NextBtn from '../buttons/nextBtn'
 
 export default class PreviewPage extends Component {
@@ -48,8 +49,9 @@ export default class PreviewPage extends Component {
                 </div>  
               </div>
             </div>
-          </Parallax>
+          </Parallax> 
         </div>
+        <IndexFooter />
       </div>
     )
   }
