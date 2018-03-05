@@ -22,7 +22,7 @@ export default class PreviewPage extends Component {
       <div className="preview-page">
         <IndexHeader />
         <div className="preview-page__content" >
-          <Parallax blur={ 5 }
+          <Parallax blur={ 8 }
                     bgImage={ 'https://pp.userapi.com/c543103/v543103443/193ca/nmsVfIkGtz8.jpg' }
                     bgImageAlt="Shopping center"
                     strength={ 500 }
@@ -32,7 +32,10 @@ export default class PreviewPage extends Component {
                 <div className="preview-page__title">
                     <h1>Freebee</h1>
                 </div>  
-                <img className="preview-page__logo" src={ Logo } alt="Freebee logo" />   
+                <img className="preview-page__logo" src={ Logo } alt="Freebee logo" /> 
+                <div className="preview-page__title">
+                    <small>Для тех, кто берет от жизни все.</small>
+                </div>  
               </div>
             </div>
           </Parallax>

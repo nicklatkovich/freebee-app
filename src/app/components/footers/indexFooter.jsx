@@ -11,17 +11,17 @@ export default () => {
           <p>Freebee в социальных сетях:</p>
         </div>
         <div className="index-footer__section-social">
-          <a className="index-footer__link" href="#">
+          <a className="index-footer__link" href="https://vk.com">
             <FontAwesome  name='vk' 
                           size='2x'
               />
           </a> 
-          <a className="index-footer__link" href="#">
+          <a className="index-footer__link" href="https://www.facebook.com/">
             <FontAwesome  name='facebook' 
                           size='2x'
             />
           </a> 
-          <a className="index-footer__link" href="#">
+          <a className="index-footer__link" href="https://www.instagram.com/">
             <FontAwesome  name='instagram' 
                           size='2x'
             />
@@ -29,7 +29,9 @@ export default () => {
         </div>
       </div>
       <div className="index-footer__section">
-          <img className="index-footer__section-logo" src={ Logo } alt="Freebee logo" />   
+          <a src="#">
+            <img className="index-footer__section-logo" src={ Logo } alt="Freebee logo" />
+          </a>   
       </div>
       <div className="index-footer__section">
         <div className="index-footer__section-text">
