@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import FontAwesome from 'react-fontawesome';
 
 import Logo from '../../../res/images/freebee-logo.png';
@@ -29,9 +30,9 @@ export default () => {
         </div>
       </div>
       <div className="index-footer__section">
-          <a src="#">
-            <img className="index-footer__section-logo" src={ Logo } alt="Freebee logo" />
-          </a>   
+        <Link to="/">
+          <img className="index-footer__section-logo" src={ Logo } alt="Freebee logo" />
+        </Link>
       </div>
       <div className="index-footer__section">
         <div className="index-footer__section-text">
