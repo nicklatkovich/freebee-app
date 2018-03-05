@@ -8,7 +8,7 @@ const redirectToAppBtn = ({ isEnabled, onClick }) => (
     className="redirect-to-app-btn"
     onClick={onClick}
   >
-    Start
+    Начать
   </Link>
 )
 
